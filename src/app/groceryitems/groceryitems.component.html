@@ -1,10 +1,10 @@
-    <h2>Books</h2>
+    <h2>Items</h2>
 
-    <ul class="books">
-      <li *ngFor="let book of books" [class.selected]=
-      "book === selectedBook" (click)="onSelected(book)">
+    <ul class="groceryitems">
+      <li *ngFor="let item of groceryitems" [class.selected]=
+      "item === selectedItem" (click)="onSelected(item)">
         <span class="badge">{{item.id}}</span> {{item.name}}
     </li>
     </ul>
     
-    <app-book-detail [item]='selectedItem'></app-book-detail>
+    <app-groceryitem-detail [item]='selectedItem'></app-groceryitem-detail>

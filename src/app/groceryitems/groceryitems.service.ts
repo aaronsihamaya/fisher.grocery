@@ -9,7 +9,7 @@ import { IItem } from './item';
 @Injectable()
 export class GroceryitemsService {
 
-  private itemsUrl = "http://localhost:5000/api/books";
+  private itemsUrl = "http://localhost:5000/api/items";
   constructor( private _http: HttpClient) { }
 
   getItems(): Observable<IItem[]>{

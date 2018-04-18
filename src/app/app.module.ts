@@ -11,6 +11,7 @@ import { AppRouterModule } from './/router.module';
 import { GroceryitemsService } from './groceryitems/groceryitems.service';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { GroceryitemDetailComponent } from './groceryitem-detail/groceryitem-detail.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HttpClientModule } from '@angular/common/http';
     BooksComponent,
     GroceryitemsComponent,
     NavBarComponent,
-    HomeComponent
+    HomeComponent,
+    GroceryitemDetailComponent
   ],
   imports: [
     BrowserModule,
