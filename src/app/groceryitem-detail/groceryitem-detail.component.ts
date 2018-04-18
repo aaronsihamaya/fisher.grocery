@@ -76,7 +76,7 @@ updateEdate = this.updateExpiry.value;
 updateNotes = this.updateNotes.value;
 
 const updateItem : IItem = {Id: updateId, Name: updateName, Brand: updateBrand, Purchasedate: updatePdate, Expirationdate: updateEdate, Notes: updateNotes};
-this._groceryitemsService.postItem(updateItem).subscribe(item => this.items.push(updateItem));
+this._groceryitemsService.putItem(updateItem).subscribe(item => this.items.push(updateItem));
 }
 deleteItem() {
   var delId : number;

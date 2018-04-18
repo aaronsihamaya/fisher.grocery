@@ -17,9 +17,7 @@
                 <h3>Purchase Date: </h3><input type="date" [formControl]="addPurchase"placeholder="Purchasedate">
                 <h3>Expiry Date: </h3><input type="date" [formControl]="addExpiry"placeholder="Expirationdate">
                 <h3>Notes: </h3><input type="text" [formControl]="addNotes"placeholder="Notes">
-                <button type="button" (click)="addItem()">Add</button>
-                <label id="SuccessLabel" style="visibility:hidden">Success! Your transaction has been added!</label>
-                </form>
+                <button type="button" (click)="addItem()">Add</button>                </form>
                 </div>
         </div>
     
@@ -38,13 +36,12 @@
             <h3>Expiry Date: </h3><input type="date" [formControl]="updateExpiry"placeholder="Expirationdate">
             <h3>Notes: </h3><input type="text" [formControl]="updateNotes"placeholder="Notes">
             <button type="button" (click)="updateItem()">update</button>
-            <label id="SuccessLabel" style="visibility:hidden">Success! Your transaction has been updateed!</label>
             </form>
             </div>
 </div>
 
 
-<button (click)="show3 = !show3">{{show ? 'hide' : 'Add Item'}}</button>
+<button (click)="show3 = !show3">{{show ? 'hide' : 'delete Item'}}</button>
 
 <hr>
 <div *ngIf="show3; else elseBlock"><h4>Delete</h4>
