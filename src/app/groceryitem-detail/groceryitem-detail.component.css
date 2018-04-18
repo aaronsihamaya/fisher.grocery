@@ -1,14 +1,14 @@
-
 input[type=text],input[type=number],input[type=date]{
   width: 100%;
-  padding: 10px 15px;
+  padding: 5px 10px;
   margin: 8px 0;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
+  text-align: center;
 }
 button {
-  width: 33%;
+  width: 100%;
   background-color: red;
   color: white;
   padding: 10px 10px;
@@ -21,6 +21,8 @@ button:hover {
   background-color: #c41515;
 }
 form {
+  width: 50%;
+  text-align: center;
   border-radius: 7px;
   background-color: #6d6565;
   padding: 20px;
