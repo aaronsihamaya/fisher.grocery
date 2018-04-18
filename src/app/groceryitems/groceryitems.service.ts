@@ -20,4 +20,12 @@ export class GroceryitemsService {
   postItem(item : IItem): Observable<IItem[]> {
     return this._http.post<IItem[]>(this.itemsUrl, item);
   }
+  putItem(item : IItem): Observable<IItem[]> {
+    return this._http.put<IItem[]>(this.itemsUrl, item);
+  }
+  deleteItem(id : number): Observable<IItem[]> {
+    var delId = id.toString();
+    return this._http.delete<IItem[]>(this.itemsUrl + "/" + delId);
+  }
+
 }

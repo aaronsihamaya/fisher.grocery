@@ -21,35 +21,32 @@
 </form>
 </div>
 
-  <style>
-  input[type=text],input[type=number],input[type=date]{
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-button {
-    width: 100%;
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-button:hover {
-    background-color: #45a049;
-}
-form {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-   
-}
-.container {
-    padding: 16px 300px;
-}
-</style>
+<h3>Update</h3>
+
+<div class="container2">
+    <form action="/action_page.php">
+<h3>Id: </h3><input type="number" [formControl]= "updateId" placeholder="Id">
+<h3>Name: </h3><input type="text" [formControl]="updateName"placeholder="Name">
+<h3>Brand: </h3><input type="text" [formControl]="updateBrand"placeholder="Brand">
+<h3>Purchase Date: </h3><input type="date" [formControl]="updatePurchase"placeholder="Purchasedate">
+<h3>Expiry Date: </h3><input type="date" [formControl]="updateExpiry"placeholder="Expirationdate">
+<h3>Notes: </h3><input type="text" [formControl]="updateNotes"placeholder="Notes">
+<button type="button" (click)="updateItem()">update</button>
+<label id="SuccessLabel" style="visibility:hidden">Success! Your transaction has been updateed!</label>
+</form>
+</div>
+
+<h4>Delete</h4>
+
+<div class="w3-panel"></div>
+<div class="w3-panel"></div>
+<div class="w3-panel w3-leftbar w3-sand w3-xxlarge w3-serif">  
+<h2>Delete a Transaction</h2></div>
+
+<div class="container3">
+    <form action="/action_page.php">
+        <h3>Id: </h3><input type="number" [formControl]= "deleteId"placeholder=" The item you want to remove">
+<button type="button" (click)="DeleteItem()">Delete</button>
+<label id="SuccessLabel" style="visibility:hidden">Success! Your transaction has been deleted!</label>
+</form>
+</div>
