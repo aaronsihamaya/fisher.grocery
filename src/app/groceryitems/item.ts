@@ -1,8 +1,8 @@
 export interface IItem {
-    id: number;
-    name: string;
-    brand: string;
-    purchasedate: Date;
-    expiratondate: Date;
-    notes: string;
+    Id: number;
+    Name: string;
+    Brand: string;
+    Purchasedate: Date;
+    ExpirationDate: Date;
+    Notes: string;
 }

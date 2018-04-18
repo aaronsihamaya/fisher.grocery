@@ -1,10 +1,25 @@
-    <h2>Items</h2>
 
-    <ul class="groceryitems">
-      <li *ngFor="let item of groceryitems" [class.selected]=
-      "item === selectedItem" (click)="onSelected(item)">
-        <span class="badge">{{item.id}}</span> {{item.name}}
-    </li>
-    </ul>
-    
+<div class="w3-panel"></div>
+<div class="w3-panel"></div>
+<div class="w3-panel w3-leftbar w3-sand w3-xxlarge w3-serif">  
+    <h2>Your Shopping List</h2></div>
+
+<div class="w3-container">
+<table class="w3-table-all" >
+<tr>
+  <th><font color="white">ID</font></th>
+  <th><font color="white">Name</font></th> 
+  <th><font color="white">Brand</font></th>
+
+</tr>
+<tr *ngFor="let item of items" class="w3-hover-green">
+    <td><font color="white">{{item.id}}</font></td>
+    <td><font color="white">{{item.name | uppercase}}</font></td> 
+    <td><font color="white">{{item.brand | uppercase}}</font></td>
+    <td><font color="white">{{item.purchasedate | date}}</font></td>
+
+</tr>
+</table>
+</div>
+
     <app-groceryitem-detail [item]='selectedItem'></app-groceryitem-detail>

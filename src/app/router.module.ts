@@ -9,7 +9,9 @@ import { GroceryitemsComponent } from './groceryitems/groceryitems.component';
 const routes: Routes = [
   {path : '', component: HomeComponent, pathMatch: 'full'},
   {path : 'home', component: HomeComponent, pathMatch: 'full'},
-  {path: 'list', component: GroceryitemsComponent}
+  {path: 'list', component: GroceryitemsComponent},
+  { path: '**', component: HomeComponent }
+
 ]
 
 

@@ -16,7 +16,7 @@ selectedItem: IItem;
 
   ngOnInit() {
     this._groceryitemsService.getItems()
-      .subscribe(items => {
+    .subscribe(items => {
         this.items = items;
       },
       error => console.log(error)
@@ -26,5 +26,5 @@ selectedItem: IItem;
   onSelect(item: IItem): void {
     this.selectedItem = item;
   }
-
+  
 }
