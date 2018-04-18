@@ -12,6 +12,7 @@ import { GroceryitemsService } from './groceryitems/groceryitems.service';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { GroceryitemDetailComponent } from './groceryitem-detail/groceryitem-detail.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { GroceryitemDetailComponent } from './groceryitem-detail/groceryitem-det
     BrowserModule,
     AppRouterModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    CommonModule
   ],
   providers: [GroceryitemsService],
   bootstrap: [AppComponent]
