@@ -3,6 +3,6 @@ export interface IItem {
     Name: string;
     Brand: string;
     Purchasedate: Date;
-    ExpirationDate: Date;
+    Expirationdate: Date;
     Notes: string;
 }

@@ -10,16 +10,23 @@
   <th><font color="white">ID</font></th>
   <th><font color="white">Name</font></th> 
   <th><font color="white">Brand</font></th>
+  <th><font color="white">Purchase Date</font></th>
+  <th><font color="white">Expiration Date</font></th>
+  <th><font color="white">Notes</font></th>
+
+
 
 </tr>
 <tr *ngFor="let item of items" class="w3-hover-green">
     <td><font color="white">{{item.id}}</font></td>
     <td><font color="white">{{item.name | uppercase}}</font></td> 
     <td><font color="white">{{item.brand | uppercase}}</font></td>
-    <td><font color="white">{{item.purchasedate | date}}</font></td>
+    <td><font color="white">{{item.purchaseDate | date}}</font></td>
+    <td><font color="white">{{item.expirationDate | date}}</font></td>
+    <td><font color="white">{{item.notes | uppercase}}</font></td>
 
 </tr>
 </table>
 </div>
 
-    <app-groceryitem-detail [item]='selectedItem'></app-groceryitem-detail>
+    <app-groceryitem-detail></app-groceryitem-detail>
