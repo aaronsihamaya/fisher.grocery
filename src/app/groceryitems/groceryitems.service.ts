@@ -17,7 +17,7 @@ export class GroceryitemsService {
   getItems(): Observable<IItem[]>{
     return this._http.get<IItem[]>(this.itemsUrl);
   }
-  postTransaction(item : IItem): Observable<IItem[]> {
+  postItem(item : IItem): Observable<IItem[]> {
     return this._http.post<IItem[]>(this.itemsUrl, item);
   }
 }

@@ -1,7 +1,9 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { IItem } from '../groceryitems/item';
 import { FormControl } from '@angular/forms';
+import { IItem } from '../groceryitems/item';
+import { Component, OnInit, Input } from '@angular/core';
 import { GroceryitemsService} from '../groceryitems/groceryitems.service';
+
+
 
 @Component({
   selector: 'app-groceryitem-detail',
@@ -19,7 +21,7 @@ addPurchase = new FormControl();
 addExpiry = new FormControl();
 addNotes = new FormControl();
 
-constructor(private _groceryitemsService) { }
+constructor(private _groceryitemsService : GroceryitemsService) { }
 
 
 ngOnInit() {

@@ -10,13 +10,13 @@
 
 <div class="container">
     <form action="/action_page.php">
-<h3>Id: </h3><input type="number" [formControl]= "addId" placeholder="ID">
-<h3>Name: </h3><input type="text" [formControl]="addName"placeholder="Item Name">
+<h3>Id: </h3><input type="number" [formControl]= "addId" placeholder="Id">
+<h3>Name: </h3><input type="text" [formControl]="addName"placeholder="Name">
 <h3>Brand: </h3><input type="text" [formControl]="addBrand"placeholder="Brand">
-<h3>Puurchase Date: </h3><input type="date" [formControl]="addPurchase"placeholder="PurchaseDate">
-<h3>Expiry Date: </h3><input type="date" [formControl]="addExpiry"placeholder="Expiry Date">
+<h3>Purchase Date: </h3><input type="date" [formControl]="addPurchase"placeholder="Purchasedate">
+<h3>Expiry Date: </h3><input type="date" [formControl]="addExpiry"placeholder="Expirationdate">
 <h3>Notes: </h3><input type="text" [formControl]="addNotes"placeholder="Notes">
-<button type="button" (click)="AddItem()">Add</button>
+<button type="button" (click)="addItem()">Add</button>
 <label id="SuccessLabel" style="visibility:hidden">Success! Your transaction has been added!</label>
 </form>
 </div>
