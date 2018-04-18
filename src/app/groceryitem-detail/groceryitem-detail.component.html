@@ -1,3 +1,55 @@
 <button class="btn btn-primary">Add Button</button>
 <button class="btn btn-primary">Update Button</button>
 <button class="btn btn-primary">Delete Button</button>
+
+
+<div class="w3-panel"></div>
+<div class="w3-panel"></div>
+<div class="w3-panel w3-leftbar w3-sand w3-xxlarge w3-serif">  
+<h2>Add a Transaction</h2></div>
+
+<div class="container">
+    <form action="/action_page.php">
+<h3>Id: </h3><input type="number" [formControl]= "addId" placeholder="ID">
+<h3>Name: </h3><input type="text" [formControl]="addName"placeholder="Item Name">
+<h3>Brand: </h3><input type="text" [formControl]="addBrand"placeholder="Brand">
+<h3>Puurchase Date: </h3><input type="date" [formControl]="addPurchase"placeholder="PurchaseDate">
+<h3>Expiry Date: </h3><input type="date" [formControl]="addExpiry"placeholder="Expiry Date">
+<h3>Notes: </h3><input type="text" [formControl]="addNotes"placeholder="Notes">
+<button type="button" (click)="AddItem()">Add</button>
+<label id="SuccessLabel" style="visibility:hidden">Success! Your transaction has been added!</label>
+</form>
+</div>
+
+  <style>
+  input[type=text],input[type=number],input[type=date]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+button {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #45a049;
+}
+form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+   
+}
+.container {
+    padding: 16px 300px;
+}
+</style>
